@@ -10,5 +10,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME) 
 @Target({ElementType.FIELD}) 
 public @interface EzuiShow {
-
+	public String title();
+	public String formatString() default "";
 }
