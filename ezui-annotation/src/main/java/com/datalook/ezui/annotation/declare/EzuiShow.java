@@ -6,10 +6,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import com.datalook.ezui.annotation.element.EzuiElement;
+
 @Documented 
 @Retention(RetentionPolicy.RUNTIME) 
 @Target({ElementType.FIELD}) 
 public @interface EzuiShow {
-	public String title();
-	public String formatString() default "";
+	public EzuiElement element();
 }
