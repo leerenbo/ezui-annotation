@@ -21,6 +21,9 @@ public @interface EzuiDataGrid {
 
 	public boolean deleteable() default true;
 
+	public boolean downloadExcelable() default false;
+
+	public boolean uploadExcelable() default false;
 	// //显示行号
 	// public boolean rownumbers() default false;
 	// //单选
